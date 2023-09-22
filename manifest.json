@@ -1,0 +1,23 @@
+{
+    "name": "BLINK",
+    "version": "1.0.0",
+    "description": "Extension to help developers remember to blink their eyes",
+    "manifest_version": 3,
+    "author": "Dione-b",
+    "icons": {
+        "16": "img/open.png",
+        "48": "img/open.png",
+        "128": "img/open.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "css": ["public/style.css"], 
+            "js": ["public/script.js"] 
+        }
+    ],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "remember to blink your eye"
+    }
+}
